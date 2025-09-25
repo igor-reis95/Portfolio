@@ -4,30 +4,38 @@ import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <header>
+        <h1>Igor Reis</h1>
+        <nav>
+          <a href="#about">Sobre</a>
+          <a href="#projects">Projetos</a>
+          <a href="#contact">Contato</a>
+        </nav>
+      </header>
+
+      <main>
+        <section id="about">
+          <h2>Sobre mim</h2>
+          <p>Escreva um breve resumo sobre quem você é, sua experiência e interesses.</p>
+        </section>
+
+        <section id="projects">
+          <h2>Projetos</h2>
+          <p>Aqui você pode listar alguns projetos importantes com links para o GitHub.</p>
+        </section>
+
+        <section id="contact">
+          <h2>Contato</h2>
+          <p>Email: <a href="mailto:contato.igors.reis@gmail.com">contato.igors.reis@gmail.com</a></p>
+          <p>LinkedIn: <a href="https://www.linkedin.com/in/igor-reis-167832149/" target="_blank">linkedin.com/in/igor-reis-167832149</a></p>
+        </section>
+      </main>
+
+      <footer>
+        <small>© {new Date().getFullYear()} Seu Nome</small>
+      </footer>
     </>
   )
 }
